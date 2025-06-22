@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job List</title>
+</head>
+<body>
+    <h1>Job List</h1>
+    <ul>
+        {% for job in jobs %}
+            <li>
+                <strong>{{ job.title }}</strong> at {{ job.company }}<br>
+                {{ job.location }}<br>
+                {{ job.description }}<br>
+                Posted: {{ job.posted_at }}
+            </li>
+        {% empty %}
+            <li>No jobs available.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
