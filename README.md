@@ -5,10 +5,28 @@ This is an example project using `https://pypi.org/project/langchain-search-djan
 
 
 ## Setup
-1. Install dependencies
+
+### Using uv
+1. Install uv if you haven't already:
+   ```bash
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   # or
+   pip install uv
+   ```
+
+2. Install dependencies and create virtual environment:
+   ```bash
+   uv sync
+   ```
+
+3. Activate the virtual environment:
+   ```bash
+   source .venv/bin/activate
+   ```
 
 
-2. set your openapi key
+### Configuration
+1. Set your OpenAI API key
 
 ```
 export OPENAI_API_KEY=....
